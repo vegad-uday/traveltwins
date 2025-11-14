@@ -1,16 +1,55 @@
-# React + Vite
+React + Vite + Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast and modern frontend setup using React, Vite, and Tailwind CSS.
+This template provides a minimal starting point with optimized developer experience.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+⚡ Vite — super-fast dev server and optimized builds
 
-## React Compiler
+⚛️ React 18 — component-based UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🎨 Tailwind CSS — utility-first styling
 
-## Expanding the ESLint configuration
+🛠️ Hot Module Replacement (HMR)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📁 Clean folder structure
+
+🔧 Ready for production build
+
+Make sure you have Node.js 16+ installed.
+
+  ```
+npm install
+```
+Run Development Server
+
+```
+npm run dev
+```
+
+
+Tailwind CSS Configuration
+
+Tailwind is already set up in:
+
+tailwind.config.js:
+```
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+
+```
+src/App.css:
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+```
